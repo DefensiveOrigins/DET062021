@@ -1,7 +1,7 @@
 New-ADOrganizationalUnit -Name "UserAccounts"
 New-ADOrganizationalUnit -Name "ComputerAccounts"
 New-ADOrganizationalUnit -Name "AdminAccounts"
-DSADD user -upn itadmin@dteclass.com "cn=itadmin,ou=AdminAccounts,dc=dte-dc1,dc=dteclass,dc=com" -fn "it" -ln "admin" -disabled no -display "ITAdmin" -desc "Non-Destruct Medieval Architecture Specialist" -office "Administration" -title "Controller" -company "DevLabs" -PWD "ThisShouldBeLongerThan20"
+DSADD user -upn itadmin@dteclass.com "cn=itadmin,ou=AdminAccounts,dc=dteclass,dc=com" -fn "it" -ln "admin" -disabled no -display "ITAdmin" -desc "Non-Destruct Medieval Architecture Specialist" -office "Administration" -title "Controller" -company "DevLabs" -PWD "ThisShouldBeLongerThan20"
 Add-ADGroupMember -Identity "Domain Admins" -Members itadmin
 DSADD user -upn Luis.Graves@dteclass.com "cn=Luis.Graves,ou=UserAccounts,dc=dteclass,dc=com" -fn "Luis" -ln "Graves" -disabled no -display "Luis Graves" -desc "Accounting Controller" -office "Accounting" -title "Controller" -company "DevLabs" -PWD "Badpass76918"
 DSADD user -upn Pam.Sparks@dteclass.com "cn=Pam.Sparks,ou=UserAccounts,dc=dteclass,dc=com" -fn "Pam" -ln "Sparks" -disabled no -display "Pam Sparks" -desc "Accounting Accounts Payable" -office "DevLabs Accounting" -title "Accounts Payable" -company "DevLabs" -PWD "Badpass30886"
